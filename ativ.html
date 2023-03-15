@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário</title>
+    <STYLE TYPE="text/css">
+        BODY {background-color: rgb(147, 223, 128); }
+    </STYLE>
+    
+    <style>
+        .BT
+        {
+            width: 150px;
+            height: 70px;
+            background-color: rgb(12, 134, 38);
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .BT:hover{
+            background-color: rgb(7, 71, 16);
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend> 
+        Nome:
+        <input type=”text” class=”caixa_larga” id=”nome”>
+        <br><br>
+        Endereço:
+        <input type=”text” class=”caixa_larga” id=”endereco”>
+        <br><br>
+        Cidade:
+        <input type=”text” class=”caixa_larga” id=”cidade”>
+        <br><br>
+        Estado:
+        <select id=”estado” class=”estado”>
+            <option>Santa Catarina</option>
+            <option>Paraná</option>
+            <option>Rio Grande do Sul</option>
+            </select>
+    </fieldset>
+    
+    <br><br>
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        Natureza do Cargo:
+        <input type="radio" name="Gerência">Gerência
+        <input type="radio" name="Financeiro">Financeiro
+        <input type="radio" name="Recepção">Recepção
+        <input type="radio" name="Adiministrativo">Adiministrativo
+        <input type="radio" name="Jurídicio">Jurídicio
+
+        <br>  <br>
+        
+        Área de Interesse:
+        <input type="checkbox">Computação
+        <input type="checkbox">Biologia
+        <input type="checkbox">Meio Ambiente
+        <input type="checkbox">Engenharia
+        <input type="checkbox">História
+       <br><br>
+       
+        Mini Currículo: 
+        <br><br>
+        <textarea class="texto" id="curriculo"></textarea>
+        
+    </fieldset>
+
+    <br><br>
+
+    <button class="BT">Enviar</button> 
+    <button class="BT">Limpar </button>
+
+
+    
+</body>
+</html>
